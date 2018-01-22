@@ -27,6 +27,9 @@ tellstick:
   host: core-tellstick
   port: [50800, 50801]
 ```
+
+*Note*: The TellStick can not transfer commands to multiple lights at the same time, and has a delay of around one second for transfering each command, so turning on multiple lights in a group or a scene will happen in sequence.
+
 Configuration variables:
 
 - **signal_repetitions** (*Optional*): Because the tellstick sends its actions via radio and from most receivers it's impossible to know if the signal was received or not. Therefore you can configure the switch and light to try to send each signal repeatedly.
